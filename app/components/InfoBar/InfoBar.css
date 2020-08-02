@@ -1,3 +1,23 @@
-span {
-  font-size: 2px;
+.container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(38, 45, 52);
+}
+.innerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.totalPortfolio {
+  font-size: 1.15em;
+  margin-left: 10px;
+}
+
+.totalPortfolioBox {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
