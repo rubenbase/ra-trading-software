@@ -1,14 +1,104 @@
 .container {
-  position: absolute;
-  top: 30%;
-  left: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  min-height: 67px;
+  border-bottom: 1px solid rgb(38, 45, 52);
+}
+
+.innerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  overflow: hidden;
 }
 
 .container h2 {
-  font-size: 5rem;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
 }
 
 .container a {
-  font-size: 1.4rem;
+  font-size: 1rem;
+}
+
+.logoBox {
+  position: relative;
+  width: 180px;
+}
+
+.proLabel {
+  top: -5px;
+  right: 0;
+  position: absolute;
+  font-size: .6rem;
+  letter-spacing: 0.1em;
+  border: 1px solid  rgb(2, 192, 118);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.topMain {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  position: relative;
+  height: 57px;
+  border-bottom: 1px solid rgb(38, 45, 52);
+  background: rgb(6, 13, 19);
+}
+.downMain {
+  display: flex;
+    flex-direction: row;
+    flex: 1 1 0%;
+    overflow: hidden;
+}
+.mainLayout {
+  gap: 1px;
+  background: rgb(38, 45, 52);
+  display: grid;
+  min-width: 0px;
+  min-height: 0px;
+  grid-template-columns: 278px 300px 1fr;
+  grid-template-rows: 1fr 220px;
+  grid-template-areas:
+      "sidebar order-book-tabbed chart"
+      "sidebar trading trading";
+  flex: 1 1 0%;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: flex;
+  min-width: 0px;
+  min-height: 0px;
+  grid-area: sidebar / sidebar / sidebar / sidebar;
+}
+
+.orderBookTabbed {
+  display: flex;
+  min-width: 0px;
+  min-height: 0px;
+  grid-area: order-book-tabbed / order-book-tabbed / order-book-tabbed / order-book-tabbed;
+}
+
+.chart {
+  display: flex;
+  min-width: 0px;
+  min-height: 0px;
+  grid-area: chart / chart / chart / chart;
+}
+
+.trading {
+  display: flex;
+  min-width: 0px;
+  min-height: 0px;
+  grid-area: trading / trading / trading / trading;
 }
