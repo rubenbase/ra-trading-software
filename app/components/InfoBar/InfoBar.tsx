@@ -61,8 +61,8 @@ export default function InfoBar(): JSX.Element {
     <div className={styles.container}>
       <div className={styles.innerContainer}>
         <div className={styles.totalPortfolioBox}>
-          <GrGoogleWallet size={16} />
-          <span className={styles.totalPortfolio}>£38,000</span>
+          <GrGoogleWallet color={'#02600d'} size={16} />
+          <span className={styles.totalPortfolio}>£67,123,124,123</span>
         </div>
         <div className={styles.stockCarrousel}>
           <ul className={styles.stockCarrouselList}>

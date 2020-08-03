@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
             <div className={styles.leftMenuBox}>
           <div className={styles.logoBox}>
             <h2>RA TRADING</h2>
-            <span className={styles.proLabel}>pro</span>
+            <span className={styles.proLabel}>basics</span>
           </div>
             <div className={styles.leftMenuIcon}>
 

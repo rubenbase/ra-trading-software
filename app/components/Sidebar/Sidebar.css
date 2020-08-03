@@ -1,8 +1,10 @@
 .sidebar {
+  z-index: 1;
   display: flex;
   min-width: 0px;
   min-height: 0px;
   grid-area: sidebar / sidebar / sidebar / sidebar;
+  border-top: 1px solid rgb(38, 45, 52);
 }
 
 .wrapper {
@@ -143,4 +145,120 @@
   font-size: 11px;
   color: rgb(138, 147, 159);
   margin-bottom: 20px;
+}
+
+.productContainer {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  height: 45px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+  background: rgb(18, 29, 39);
+}
+
+.pairBox {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  width: 135px;
+}
+
+.cryptoIcon {
+  margin-right: 8px;
+}
+
+.cryptoBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.pairLabel {
+  font-weight: bold;
+  line-height: 1.5;
+  word-break: normal;
+  display: inline;
+  font-size: 13px;
+  text-align: left;
+  text-transform: inherit;
+  color: rgb(255, 255, 255);
+}
+
+.cryptoName {
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: normal;
+  display: inline;
+  font-size: 9px;
+  text-align: left;
+  text-transform: inherit;
+  color: rgb(138, 147, 159);
+}
+
+.sparkLineBox {
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  height: 20px;
+}
+
+.volumeBox {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.priceBox {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 95px;
+  text-align: right;
+}
+
+.volumeLabel {
+  width: 120px;
+  text-align: right;
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: normal;
+  font-size: 13px;
+  text-transform: inherit;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+}
+
+.volumeDescription {
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: normal;
+  font-size: 11px;
+  text-transform: inherit;
+  color: rgba(138, 147, 159, 0.4);
+}
+
+.priceLabel {
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: normal;
+  display: inline;
+  font-size: 13px;
+  text-transform: inherit;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+}
+
+.priceDescription {
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: normal;
+  font-size: 11px;
+  text-transform: inherit;
+  color: rgb(46, 174, 52);
+  white-space: nowrap;
 }

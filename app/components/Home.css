@@ -36,12 +36,12 @@ align-items: center;
 .leftMenuIcon {
   display: flex;
   align-content: center;
-  margin-left: 24px;
+  margin-left: 44px;
 }
 
 .proLabel {
   top: -5px;
-  right: 0;
+  right: -15px;
   position: absolute;
   font-size: .6rem;
   letter-spacing: 0.1em;
@@ -63,8 +63,7 @@ align-items: center;
   flex-direction: row;
   position: relative;
   height: 69px;
-  border-bottom: 1px solid rgb(38, 45, 52);
-  background: rgb(6, 13, 19);
+  background: #189e28;
 }
 
 .menuBox {
@@ -86,7 +85,7 @@ align-items: center;
   display: grid;
   min-width: 0px;
   min-height: 0px;
-  grid-template-columns: 278px 300px 1fr;
+  grid-template-columns: 500px 300px 1fr;
   grid-template-rows: 1fr 220px;
   grid-template-areas:
       "sidebar order-book-tabbed chart"

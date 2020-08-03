@@ -16,6 +16,7 @@
   font-weight: bold;
   font-size: 1.15em;
   margin-left: 10px;
+  z-index: 1;
 }
 
 .totalPortfolioBox {
@@ -23,13 +24,39 @@
   align-items: center;
   height: 100%;
   padding-right: 35px;
-  border-right: 1px solid rgb(38, 45, 52);
+  position: relative;
+  text-shadow: 2px 2px #02600d;
+}
+
+.totalPortfolioBox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: #02600d;
+  right: -5px;
+  top: 50px;
+}
+
+.totalPortfolioBox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #00740e;
+  left: 0;
+  top: 27px;
 }
 
 .stockCarrousel {
   display: flex;
   overflow: hidden;
   position: relative;
+  background: rgb(6, 13, 19) ;
 }
 
 .stockCarrousel::before,.stockCarrousel::after {
