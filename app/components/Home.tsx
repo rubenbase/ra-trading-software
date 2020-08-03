@@ -6,6 +6,8 @@ import InfoBar from './InfoBar';
 
 import {MdApps} from 'react-icons/md'
 import {FaChevronDown} from 'react-icons/fa'
+import Sidebar from './Sidebar';
+
 export default function Home(): JSX.Element {
   return (
     <>
@@ -46,7 +48,7 @@ export default function Home(): JSX.Element {
         </div>
         <div className={styles.downMain}>
           <div className={styles.mainLayout}>
-            <div className={styles.sidebar}>Sidebar</div>
+            <Sidebar/>
             <div className={styles.orderBookTabbed}>Order Book</div>
             <div className={styles.chart}>Chart</div>
             <div className={styles.trading}>Trading</div>
