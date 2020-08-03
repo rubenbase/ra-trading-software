@@ -13,13 +13,6 @@
   margin: 0 40px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0%;
-  overflow: hidden;
-}
-
 .container h2 {
   font-size: 1.3rem;
   letter-spacing: 2px;
@@ -30,8 +23,20 @@
 }
 
 .logoBox {
+  display: flex;
   position: relative;
   width: 180px;
+}
+
+.leftMenuBox {
+display: flex;
+align-items: center;
+}
+
+.leftMenuIcon {
+  display: flex;
+  align-content: center;
+  margin-left: 24px;
 }
 
 .proLabel {
@@ -45,20 +50,35 @@
   padding: 3px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  overflow: hidden;
+}
+
 .topMain {
   display: flex;
   flex-shrink: 0;
   flex-direction: row;
   position: relative;
-  height: 57px;
+  height: 69px;
   border-bottom: 1px solid rgb(38, 45, 52);
   background: rgb(6, 13, 19);
 }
+
+.menuBox {
+  display: flex;
+}
+
+.menuLink {
+  margin-left: 16px;
+}
 .downMain {
   display: flex;
-    flex-direction: row;
-    flex: 1 1 0%;
-    overflow: hidden;
+  flex-direction: row;
+  flex: 1 1 0%;
+  overflow: hidden;
 }
 .mainLayout {
   gap: 1px;

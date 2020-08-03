@@ -5,6 +5,7 @@
 }
 .innerContainer {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +13,7 @@
 }
 
 .totalPortfolio {
+  font-weight: bold;
   font-size: 1.15em;
   margin-left: 10px;
 }
@@ -19,5 +21,93 @@
 .totalPortfolioBox {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  height: 100%;
+  padding-right: 35px;
+  border-right: 1px solid rgb(38, 45, 52);
+}
+
+.stockCarrousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.stockCarrousel::before,.stockCarrousel::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 68px;
+  background: linear-gradient(to right, rgb(6, 13, 19) 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+
+.stockCarrousel::after{
+top:0;
+right:0;
+transform: rotateZ(180deg)
+}
+
+.stockCarrousel::before {
+  top:0;
+  left: 0;
+}
+
+.stockPair {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2591f9;
+  /* color: #2591f9; */
+  letter-spacing: 1px;
+}
+
+.stockPercentage {
+  /* color: #00ff3b; */
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.stockChange24 {
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+.stockPercentage24 {
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+.stockPrice {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.stockCarrouselList {
+  display: flex;
+  animation: scroll 55s linear infinite;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+
+.stockCarrouselUnit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 126px;
+}
+
+.stockCarrouselUnit:first-child {
+  /* margin-left: 10px; */
+}
+
+.success {
+  color: #00ff3b;
+}
+
+.error {
+  color: #ff6b68;
 }
