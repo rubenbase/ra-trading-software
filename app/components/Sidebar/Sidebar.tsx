@@ -16,6 +16,33 @@ export default function Sidebar(): JSX.Element {
                   </span>
                   <input className={styles.searchInput} />
                 </div>
+                <div className={styles.filterContainer}>
+                  <div className={styles.filterOption}>
+                    Fiat
+                  </div>
+                  <div className={`${styles.filterOption} ${styles.filterOptionSelected}`}>
+                    Defi
+                  </div>
+                  <div className={`${styles.filterOption} ${styles.filterOptionSelected}`}>
+                    Active
+                  </div>
+                  <div className={`${styles.filterOption} ${styles.filterOptionSelected}`}>
+                    Closed
+                  </div>
+                </div>
+                <div className={styles.fiatContainer}>
+                  <div className={styles.fiatInnerWrapper}>
+                    <div className={styles.scroller}>
+                      <div className={styles.fiatBox}>
+                        <div className={styles.groupContainer}>
+                          <span className={styles.fiatTitle}>
+                            Fiat Markets
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
