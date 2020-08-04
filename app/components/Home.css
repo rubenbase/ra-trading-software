@@ -85,10 +85,10 @@ align-items: center;
   display: grid;
   min-width: 0px;
   min-height: 0px;
-  grid-template-columns: 500px 300px 1fr;
-  grid-template-rows: 1fr 220px;
+  grid-template-columns: 500px 1fr 300px;
+  grid-template-rows: 1fr 320px;
   grid-template-areas:
-      "sidebar order-book-tabbed chart"
+      "sidebar chart order-book-tabbed"
       "sidebar trading trading";
   flex: 1 1 0%;
   overflow: hidden;
@@ -113,6 +113,7 @@ align-items: center;
   min-width: 0px;
   min-height: 0px;
   grid-area: chart / chart / chart / chart;
+
 }
 
 .trading {

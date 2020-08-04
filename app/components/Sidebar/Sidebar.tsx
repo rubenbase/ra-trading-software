@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Sidebar.css';
-import {MdSearch} from 'react-icons/md'
+import {MdSearch, MdStarBorder, MdStar, MdDialpad} from 'react-icons/md'
+
 export default function Sidebar(): JSX.Element {
 
   return (
@@ -35,13 +36,24 @@ export default function Sidebar(): JSX.Element {
                     <div className={styles.scroller}>
                       <div className={styles.fiatBox}>
                         <div className={styles.groupContainer}>
-                          <span className={styles.fiatTitle}>
-                            Fiat Markets
-                          </span>
+                          <div className={styles.groupContainerTop}>
+                            <span className={styles.fiatTitle}>
+                              Fiat Markets
+                            </span>
+                            <div className={styles.groupContainerTop}>
+                              <div style={{marginRight:'8px'}} className={styles.circleButton}>
+                                <MdDialpad size={16} color={'#8a939f'} />
+                              </div>
+                              <div className={styles.circleButton}>
+                                {/* <MdStarBorder size={24} />  */}
+                                <MdStar size={18}/>
+                              </div>
+                            </div>
+                          </div>
 
                           {/* Fiat products */}
-                          {Array.of(1,2,3,4,5,6,6,7,8,4,41,2,3,4,5,6,6,7).map(() => (
 
+                          {Array.of(1,2,3,4,5,6,6,7,8,4,41,2,3,4,5,6,6,7,4,4,4,4,4,4,4).map(() => (
                             <div className={styles.productContainer}>
                             <div className={styles.pairBox}>
                               <div className={styles.cryptoIcon}>
@@ -76,7 +88,7 @@ export default function Sidebar(): JSX.Element {
                               </span>
                             </div>
                           </div>
-                        ))}
+                              ))}
 
 
 
